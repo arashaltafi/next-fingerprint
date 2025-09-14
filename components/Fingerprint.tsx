@@ -145,8 +145,8 @@ const Fingerprint = () => {
     };
 
     return (
-        <div className="max-w-md mx-auto p-6 bg-white rounded-2xl shadow-md space-y-4">
-            <h2 className="text-xl font-semibold">احراز هویت با اثر انگشت (WebAuthn)</h2>
+        <div className="flex items-center justify-center flex-col gap-8">
+            <h2 className="text-2xl font-semibold">احراز هویت با اثر انگشت (WebAuthn)</h2>
 
             <div className="flex gap-3">
                 <button
@@ -182,9 +182,9 @@ const Fingerprint = () => {
                 </button>
             </div>
 
-            <p className="p-3 bg-gray-50 rounded-md text-gray-800">{msg}</p>
+            <p className="p-3 bg-gray-100 rounded-md text-gray-800">{msg}</p>
 
-            <p className="text-sm text-gray-500">
+            <p className="text-base text-gray-500">
                 توجه: این نمونه برای تست محلی است. در اپ واقعی شما باید challenge را از سرور بگیرید و بعد از assertion
                 آن را در سرور اعتبارسنجی کنید.
             </p>
